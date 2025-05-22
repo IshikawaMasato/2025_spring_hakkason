@@ -1,0 +1,21 @@
+# Pythonのキャッシュや一時ファイル
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 環境変数設定ファイル
+.env
+*.env
+
+# 開発用の仮想環境
+venv/
+env/
+
+# データベースファイル
+*.db
+*.sqlite3
+instance/
+migrations/
+
+# ログファイル
+*.log
