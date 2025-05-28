@@ -1,11 +1,14 @@
 # Pythonのキャッシュや一時ファイル
 __pycache__/
+
 *.py[cod]
 *.pyo
+*.pyc
 
 # 環境変数設定ファイル
 .env
 *.env
+.flaskenv
 
 # 開発用の仮想環境
 venv/
