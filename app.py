@@ -4,9 +4,16 @@ from timetable import timetable_bp
 from mypage import mypage_bp
 from syllabus import syllabus_bp
 from datetime import timedelta
-
+from flask_migrate import Migrate
+from config import Config
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config.from_object(Config)
+
+db.init_app(app)
+migrate = Migrate(app, db)
+
 app.secret_key = ''.join(random.choices(string.ascii_letters, k=256))
 
 app.register_blueprint(timetable_bp)
