@@ -1,6 +1,6 @@
 # Pythonのキャッシュや一時ファイル
 __pycache__/
-
+__pycache__
 *.py[cod]
 *.pyo
 *.pyc

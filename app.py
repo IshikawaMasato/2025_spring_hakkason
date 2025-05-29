@@ -6,11 +6,12 @@ from syllabus import syllabus_bp
 from datetime import timedelta
 from flask_migrate import Migrate
 from config import Config
-from flask_sqlalchemy import SQLAlchemy
+from models import db
 
 app = Flask(__name__)
 app.config.from_object(Config)
 
+# DB の初期化
 db.init_app(app)
 migrate = Migrate(app, db)
 
