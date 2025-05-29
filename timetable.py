@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for, Blueprint, request, session, flash,jsonify
-import db,json
+import db_access,json
 
 
 timetable_bp = Blueprint('timetable', __name__)
